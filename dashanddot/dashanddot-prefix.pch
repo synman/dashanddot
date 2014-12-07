@@ -1,0 +1,21 @@
+//
+//  dashanddot-prefix.pch
+//  dashanddot
+//
+//  Created by Shell Shrader on 12/7/14.
+//  Copyright (c) 2014 Shell Shrader. All rights reserved.
+//
+
+#ifndef dashanddot_dashanddot_prefix_pch
+#define dashanddot_dashanddot_prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <Availability.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import <WWRobotAPI/WWRobotAPI.h>
+
+#endif
