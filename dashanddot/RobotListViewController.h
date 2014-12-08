@@ -6,11 +6,13 @@
 //  Copyright (c) 2014 Shell Shrader. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
 @interface RobotListViewController : UITableViewController<WWRobotManagerDelegate>
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *detailsButton;
 @property (nonatomic, strong) WWRobotManager *manager;
+@property NSMutableArray *robots;
+
+- (void) checkIfCollapsed;
 
 @end
 

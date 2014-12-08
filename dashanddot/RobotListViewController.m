@@ -9,18 +9,23 @@
 #import "RobotListViewController.h"
 #import "RobotListTableViewCell.h"
 
-@interface RobotListViewController ()
-
-@property NSMutableArray *robots;
-
-@end
+//@interface RobotListViewController ()
+//
+//@property NSMutableArray *robots;
+//
+//
+//@end
 
 @implementation RobotListViewController
 
+NSArray *navButtons = nil;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
     
+    navButtons = self.navigationItem.rightBarButtonItems;
     self.robots = [NSMutableArray new];
     
     // iniitalize our table
@@ -41,6 +46,34 @@
     self.manager.delegate = self;
     
     [self.manager startScanningForRobots:2.0f];
+}
+
+- (void) viewWillAppear:(BOOL)animated {
+        [super viewWillAppear:animated];
+        [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+- (void)orientationChanged:(NSNotification *)notification {
+    [self performSelector:@selector(checkIfCollapsed) withObject:nil afterDelay:.1];
+}
+
+- (void) checkIfCollapsed {
+    if (self.splitViewController.collapsed) {
+        [self.navigationItem setRightBarButtonItems:navButtons animated:NO];
+    } else {
+        [self.navigationItem setRightBarButtonItems:nil animated:NO];
+    }
+}
+
+
+-(void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:UIDeviceOrientationDidChangeNotification object:nil];
+}
+
+- (void) viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];    
+    [self checkIfCollapsed];
 }
 
 - (void)didReceiveMemoryWarning {

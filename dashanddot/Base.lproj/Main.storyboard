@@ -86,11 +86,21 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-OG-zec" userLabel="Amplitude Progress">
                                 <rect key="frame" x="225" y="101" width="150" height="2"/>
                             </progressView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-DU-sLT">
+                                <rect key="frame" x="276" y="512" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detect Movement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxY-qR-CXj">
+                                <rect key="frame" x="221" y="483" width="159" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jGp-AF-scf" firstAttribute="top" secondItem="lKl-rW-Nrl" secondAttribute="bottom" id="5BW-DG-QBB"/>
                             <constraint firstAttribute="centerX" secondItem="jGp-AF-scf" secondAttribute="centerX" id="6B1-Bh-VKX"/>
+                            <constraint firstAttribute="centerX" secondItem="GxY-qR-CXj" secondAttribute="centerX" id="6gR-9p-8oX"/>
                             <constraint firstAttribute="centerX" secondItem="I4q-3P-TkN" secondAttribute="centerX" id="G1R-jQ-Ijc"/>
                             <constraint firstItem="2wx-6Q-nJf" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" constant="40" id="MId-dE-ycT"/>
                             <constraint firstAttribute="centerX" secondItem="E76-wS-7yX" secondAttribute="centerX" id="Pxr-1W-F4X"/>
@@ -100,7 +110,10 @@
                             <constraint firstAttribute="centerX" secondItem="2wx-6Q-nJf" secondAttribute="centerX" id="XRP-V7-3cF"/>
                             <constraint firstAttribute="centerX" secondItem="3sb-Cc-aRe" secondAttribute="centerX" id="Yt2-Bt-ndO"/>
                             <constraint firstAttribute="centerX" secondItem="GPP-OG-zec" secondAttribute="centerX" id="ZWV-w4-Fky"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Wez-DU-sLT" secondAttribute="bottom" constant="8" id="ba0-rn-FPS"/>
                             <constraint firstAttribute="centerY" secondItem="E76-wS-7yX" secondAttribute="centerY" constant="0.5" id="clY-Oc-3R7"/>
+                            <constraint firstItem="Wez-DU-sLT" firstAttribute="top" secondItem="GxY-qR-CXj" secondAttribute="bottom" constant="8" id="cuh-SO-kOC"/>
+                            <constraint firstAttribute="centerX" secondItem="Wez-DU-sLT" secondAttribute="centerX" constant="-0.5" id="jyk-Cz-aXp"/>
                             <constraint firstItem="0Y7-Uz-brP" firstAttribute="top" secondItem="3sb-Cc-aRe" secondAttribute="bottom" constant="18" id="mYV-c4-DhU"/>
                             <constraint firstItem="3sb-Cc-aRe" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" id="ozc-5a-Ci3"/>
                             <constraint firstItem="GPP-OG-zec" firstAttribute="top" secondItem="I4q-3P-TkN" secondAttribute="bottom" id="q7C-tD-RaQ"/>
@@ -110,6 +123,7 @@
                     <tabBarItem key="tabBarItem" title="Sensors" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="amplitudeProgress" destination="GPP-OG-zec" id="Jxw-5V-t05"/>
+                        <outlet property="detectMovementSwitch" destination="Wez-DU-sLT" id="dLd-As-yQN"/>
                         <outlet property="xProgress" destination="jGp-AF-scf" id="teU-S8-4Zn"/>
                         <outlet property="yProgress" destination="3sb-Cc-aRe" id="BwW-Wg-TlN"/>
                         <outlet property="zProgress" destination="2wx-6Q-nJf" id="gWq-ww-kK7"/>
@@ -196,6 +210,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsButton" destination="yYx-xW-wB6" id="L5G-Wg-rDI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vW-dU-i7T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -274,6 +291,6 @@
         <image name="third" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8y1-sW-lhK"/>
+        <segue reference="G5G-M7-BgX"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Shell Shrader. All rights reserved.
 //
 
-@interface SoundViewController : UIViewController  <WWRobotDelegate>
+#import "RobotControlViewController.h"
 
-@property (nonatomic, strong) NSArray *connectedRobots;
+@interface SoundViewController : RobotControlViewController
 
 - (IBAction)playSound:(id)sender;
 

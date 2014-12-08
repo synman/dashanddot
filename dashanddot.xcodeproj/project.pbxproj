@@ -15,6 +15,7 @@
 		D737A8721A351F8300C62FDC /* RobotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D737A8711A351F8300C62FDC /* RobotListViewController.m */; };
 		D737A8781A35248200C62FDC /* RobotListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D737A8761A35248200C62FDC /* RobotListTableViewCell.m */; };
 		D737A8791A35248200C62FDC /* RobotListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D737A8771A35248200C62FDC /* RobotListTableViewCell.xib */; };
+		D737A87C1A35822B00C62FDC /* RobotControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D737A87B1A35822B00C62FDC /* RobotControlViewController.m */; };
 		D7FD42751A33D37E00B982F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD42741A33D37E00B982F2 /* main.m */; };
 		D7FD42781A33D37E00B982F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD42771A33D37E00B982F2 /* AppDelegate.m */; };
 		D7FD427B1A33D37E00B982F2 /* SoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD427A1A33D37E00B982F2 /* SoundViewController.m */; };
@@ -47,6 +48,8 @@
 		D737A8751A35248200C62FDC /* RobotListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotListTableViewCell.h; sourceTree = "<group>"; };
 		D737A8761A35248200C62FDC /* RobotListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotListTableViewCell.m; sourceTree = "<group>"; };
 		D737A8771A35248200C62FDC /* RobotListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RobotListTableViewCell.xib; sourceTree = "<group>"; };
+		D737A87A1A35822B00C62FDC /* RobotControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotControlViewController.h; sourceTree = "<group>"; };
+		D737A87B1A35822B00C62FDC /* RobotControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotControlViewController.m; sourceTree = "<group>"; };
 		D7FD426F1A33D37E00B982F2 /* dashanddot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dashanddot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FD42731A33D37E00B982F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7FD42741A33D37E00B982F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -103,6 +106,8 @@
 		D737A8731A35204400C62FDC /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D737A87A1A35822B00C62FDC /* RobotControlViewController.h */,
+				D737A87B1A35822B00C62FDC /* RobotControlViewController.m */,
 				D737A8701A351EC000C62FDC /* RobotListViewController.h */,
 				D737A8711A351F8300C62FDC /* RobotListViewController.m */,
 				D7FD429B1A33D5FC00B982F2 /* ThirdViewController.h */,
@@ -290,6 +295,7 @@
 				D7FD42781A33D37E00B982F2 /* AppDelegate.m in Sources */,
 				D737A8721A351F8300C62FDC /* RobotListViewController.m in Sources */,
 				D7FD427B1A33D37E00B982F2 /* SoundViewController.m in Sources */,
+				D737A87C1A35822B00C62FDC /* RobotControlViewController.m in Sources */,
 				D7FD42751A33D37E00B982F2 /* main.m in Sources */,
 				D737A8781A35248200C62FDC /* RobotListTableViewCell.m in Sources */,
 			);
@@ -416,6 +422,7 @@
 				INFOPLIST_FILE = dashanddot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
 			};
 			name = Debug;
 		};
@@ -432,6 +439,7 @@
 				INFOPLIST_FILE = dashanddot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos7.1;
 			};
 			name = Release;
 		};

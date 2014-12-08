@@ -8,9 +8,9 @@
 
 #import "SoundViewController.h"
 
-@interface SoundViewController ()
-
-@end
+//@interface SoundViewController ()
+//
+//@end
 
 @implementation SoundViewController
 
@@ -25,16 +25,12 @@
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
-    for (WWRobot *robot in self.connectedRobots) {
-        robot.delegate = nil;
-    }
-    
-    NSLog(@"first view unloaded");
+    [super viewDidDisappear:animated];
 }
 
 - (IBAction)playSound:(id)sender {
     
-    self.connectedRobots = [[WWRobotManager manager] allConnectedRobots];
+    [self refreshConnectedRobots];
 
     int x = 0;
     
@@ -56,14 +52,6 @@
         [self performSelector:@selector(sendCommandSetToRobot:) withObject:objects afterDelay:x * 4];
         x++;
     }
-}
-
-- (void) sendCommandSetToRobot:(NSArray *)objects {
-    WWCommandSet *cmd = objects[0];
-    WWRobot *robot = objects[1];
-    
-    [robot sendRobotCommandSet:cmd];
-    NSLog(@"sent sound to %@", robot.name);
 }
 
 @end

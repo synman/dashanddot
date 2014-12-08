@@ -5,12 +5,20 @@
 //  Created by Shell Shrader on 12/6/14.
 //  Copyright (c) 2014 Shell Shrader. All rights reserved.
 //
+#import "RobotControlViewController.h"
 
-#import <UIKit/UIKit.h>
+@interface SensorsViewController : RobotControlViewController
 
-@interface SensorsViewController : UIViewController <WWRobotDelegate>
+@property (nonatomic, strong) NSTimer *refreshDataTimer;
 
-@property (nonatomic, strong) NSArray *connectedRobots;
+@property (weak, nonatomic) IBOutlet UIProgressView *amplitudeProgress;
+
+@property (weak, nonatomic) IBOutlet UIProgressView *xProgress;
+@property (weak, nonatomic) IBOutlet UIProgressView *yProgress;
+@property (weak, nonatomic) IBOutlet UIProgressView *zProgress;
+@property (weak, nonatomic) IBOutlet UISwitch *detectMovementSwitch;
+
+- (void) refreshSensorData:(NSTimer *)timer;
 
 @end
 
