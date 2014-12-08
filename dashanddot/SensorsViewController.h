@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SensorsViewController : UIViewController <WWRobotDelegate>
 
+@property (nonatomic, strong) NSArray *connectedRobots;
 
 @end
 
