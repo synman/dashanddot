@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Shell Shrader. All rights reserved.
 //
 
-@interface RobotListViewController : UITableViewController<WWRobotManagerDelegate>
+@interface RobotListViewController : UITableViewController <WWRobotManagerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *detailsButton;
 @property (nonatomic, strong) WWRobotManager *manager;

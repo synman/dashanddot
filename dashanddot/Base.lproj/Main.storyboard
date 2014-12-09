@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BTc-JX-Hcf">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ub-VE-RhJ">
-                                <rect key="frame" x="246" y="278" width="108" height="44"/>
+                                <rect key="frame" x="246" y="492" width="108" height="44"/>
                                 <state key="normal" title="Play Sound">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -28,8 +29,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="5ub-VE-RhJ" secondAttribute="centerY" id="1Xd-J1-YaG"/>
-                            <constraint firstAttribute="centerX" secondItem="5ub-VE-RhJ" secondAttribute="centerX" id="7mL-hW-b8B"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="5ub-VE-RhJ" secondAttribute="bottom" constant="15" id="Jev-Yx-KIX"/>
+                            <constraint firstAttribute="centerX" secondItem="5ub-VE-RhJ" secondAttribute="centerX" id="ko6-CF-gvm"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sounds" image="first" id="acW-dT-cKf"/>
@@ -88,10 +89,19 @@
                             </progressView>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-DU-sLT">
                                 <rect key="frame" x="276" y="512" width="51" height="31"/>
+                                <connections>
+                                    <action selector="detectMovementSwitchChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="kJ0-1H-XXL"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detect Movement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxY-qR-CXj">
                                 <rect key="frame" x="221" y="483" width="159" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-kZ-uRo" userLabel="Sensors Label">
+                                <rect key="frame" x="119" y="137" width="362" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -102,6 +112,7 @@
                             <constraint firstAttribute="centerX" secondItem="jGp-AF-scf" secondAttribute="centerX" id="6B1-Bh-VKX"/>
                             <constraint firstAttribute="centerX" secondItem="GxY-qR-CXj" secondAttribute="centerX" id="6gR-9p-8oX"/>
                             <constraint firstAttribute="centerX" secondItem="I4q-3P-TkN" secondAttribute="centerX" id="G1R-jQ-Ijc"/>
+                            <constraint firstItem="1rF-kZ-uRo" firstAttribute="top" secondItem="GPP-OG-zec" secondAttribute="bottom" constant="20" id="K1H-U4-MBQ"/>
                             <constraint firstItem="2wx-6Q-nJf" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" constant="40" id="MId-dE-ycT"/>
                             <constraint firstAttribute="centerX" secondItem="E76-wS-7yX" secondAttribute="centerX" id="Pxr-1W-F4X"/>
                             <constraint firstAttribute="centerX" secondItem="lKl-rW-Nrl" secondAttribute="centerX" id="RyH-EZ-0sf"/>
@@ -118,12 +129,14 @@
                             <constraint firstItem="3sb-Cc-aRe" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" id="ozc-5a-Ci3"/>
                             <constraint firstItem="GPP-OG-zec" firstAttribute="top" secondItem="I4q-3P-TkN" secondAttribute="bottom" id="q7C-tD-RaQ"/>
                             <constraint firstAttribute="centerX" secondItem="0Y7-Uz-brP" secondAttribute="centerX" id="qog-EK-hxT"/>
+                            <constraint firstAttribute="centerX" secondItem="1rF-kZ-uRo" secondAttribute="centerX" id="vkE-mq-YwI"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sensors" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="amplitudeProgress" destination="GPP-OG-zec" id="Jxw-5V-t05"/>
                         <outlet property="detectMovementSwitch" destination="Wez-DU-sLT" id="dLd-As-yQN"/>
+                        <outlet property="sensorsLabel" destination="1rF-kZ-uRo" id="C65-b5-2iY"/>
                         <outlet property="xProgress" destination="jGp-AF-scf" id="teU-S8-4Zn"/>
                         <outlet property="yProgress" destination="3sb-Cc-aRe" id="BwW-Wg-TlN"/>
                         <outlet property="zProgress" destination="2wx-6Q-nJf" id="gWq-ww-kK7"/>

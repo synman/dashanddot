@@ -23,6 +23,15 @@
     [super viewWillAppear:animated];
     
     [self refreshConnectedRobots];
+    self.refreshRobotsTimer = [NSTimer scheduledTimerWithTimeInterval:1
+                                                             target:self selector:@selector(refreshConnectedRobots) userInfo:nil repeats:YES];
+
+}
+
+- (void) viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    
+    [self.refreshRobotsTimer invalidate];
 }
 
 - (void) refreshConnectedRobots

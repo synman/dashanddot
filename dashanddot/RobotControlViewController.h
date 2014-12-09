@@ -9,6 +9,7 @@
 @interface RobotControlViewController : UIViewController <WWRobotDelegate>
 
 @property (nonatomic, strong) NSArray *connectedRobots;
+@property (nonatomic, strong) NSTimer *refreshRobotsTimer;
 
 - (void) refreshConnectedRobots;
 - (void) sendCommandSetToRobots:(WWCommandSet *)cmd;

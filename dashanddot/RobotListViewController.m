@@ -49,8 +49,8 @@ NSArray *navButtons = nil;
 }
 
 - (void) viewWillAppear:(BOOL)animated {
-        [super viewWillAppear:animated];
-        [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
+    [super viewWillAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self  selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
 }
 
 - (void)orientationChanged:(NSNotification *)notification {
@@ -106,7 +106,8 @@ NSArray *navButtons = nil;
     NSMutableString *detail = [NSMutableString stringWithCapacity:200];
 //    [detail appendFormat:@"uuId: %@\n", robot.uuId];
     [detail appendFormat:@"Firmware %@\n", robot.firmwareVersion];
-//    [detail appendFormat:@"Serial: %@\n", robot.serialNumber];
+    [detail appendFormat:@"Configured: %@\n", robot.isUnconfigured ? @"false" : @"true"];
+    //    [detail appendFormat:@"Serial: %@\n", robot.serialNumber];
     [detail appendFormat:@"RSSI %d dB\n", robot.signalStrength.intValue];
     [detail appendFormat:@"Personality color: %d\n", robot.personalityColorIndex];
     [detail appendFormat:@"Robot Type: %d\n", robot.robotType];

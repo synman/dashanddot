@@ -17,6 +17,9 @@
 @property (weak, nonatomic) IBOutlet UIProgressView *yProgress;
 @property (weak, nonatomic) IBOutlet UIProgressView *zProgress;
 @property (weak, nonatomic) IBOutlet UISwitch *detectMovementSwitch;
+@property (weak, nonatomic) IBOutlet UILabel *sensorsLabel;
+
+- (IBAction)detectMovementSwitchChanged:(id)sender;
 
 - (void) refreshSensorData:(NSTimer *)timer;
 

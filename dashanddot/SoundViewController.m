@@ -8,10 +8,6 @@
 
 #import "SoundViewController.h"
 
-//@interface SoundViewController ()
-//
-//@end
-
 @implementation SoundViewController
 
 - (void)viewDidLoad {
@@ -30,8 +26,6 @@
 
 - (IBAction)playSound:(id)sender {
     
-    [self refreshConnectedRobots];
-
     int x = 0;
     
     for (WWRobot *robot in self.connectedRobots) {
@@ -40,7 +34,7 @@
         WWCommandSet *speakerCommand = [WWCommandSet new];
         WWCommandSpeaker *speaker;
         if (x == 0) {
-            speaker = [[WWCommandSpeaker alloc] initWithDefaultSound:WW_SOUNDFILE_LION];
+            speaker = [[WWCommandSpeaker alloc] initWithDefaultSound:WW_SOUNDFILE_BEEP];
         } else {
             speaker = [[WWCommandSpeaker alloc] initWithDefaultSound:WW_SOUNDFILE_UH_OH];
         }
