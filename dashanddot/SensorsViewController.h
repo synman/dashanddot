@@ -19,6 +19,10 @@
 @property (weak, nonatomic) IBOutlet UISwitch *detectMovementSwitch;
 @property (weak, nonatomic) IBOutlet UILabel *sensorsLabel;
 
+@property (weak, nonatomic) IBOutlet UIImageView *dashSensorLeft;
+@property (weak, nonatomic) IBOutlet UIImageView *dashSensorRight;
+@property (weak, nonatomic) IBOutlet UIImageView *dashSensorRear;
+
 - (IBAction)detectMovementSwitchChanged:(id)sender;
 
 - (void) refreshSensorData:(NSTimer *)timer;

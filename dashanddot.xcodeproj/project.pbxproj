@@ -16,6 +16,7 @@
 		D737A8781A35248200C62FDC /* RobotListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D737A8761A35248200C62FDC /* RobotListTableViewCell.m */; };
 		D737A8791A35248200C62FDC /* RobotListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D737A8771A35248200C62FDC /* RobotListTableViewCell.xib */; };
 		D737A87C1A35822B00C62FDC /* RobotControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D737A87B1A35822B00C62FDC /* RobotControlViewController.m */; };
+		D752F2511A3EA4C300D303F4 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D752F24F1A3EA4B500D303F4 /* CoreMotion.framework */; };
 		D7FD42751A33D37E00B982F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD42741A33D37E00B982F2 /* main.m */; };
 		D7FD42781A33D37E00B982F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD42771A33D37E00B982F2 /* AppDelegate.m */; };
 		D7FD427B1A33D37E00B982F2 /* SoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD427A1A33D37E00B982F2 /* SoundViewController.m */; };
@@ -23,7 +24,7 @@
 		D7FD42811A33D37E00B982F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7FD427F1A33D37E00B982F2 /* Main.storyboard */; };
 		D7FD42831A33D37E00B982F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7FD42821A33D37E00B982F2 /* Images.xcassets */; };
 		D7FD42921A33D37E00B982F2 /* dashanddotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD42911A33D37E00B982F2 /* dashanddotTests.m */; };
-		D7FD429D1A33D5FC00B982F2 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD429C1A33D5FC00B982F2 /* ThirdViewController.m */; };
+		D7FD429D1A33D5FC00B982F2 /* DriveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7FD429C1A33D5FC00B982F2 /* DriveViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		D737A8771A35248200C62FDC /* RobotListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RobotListTableViewCell.xib; sourceTree = "<group>"; };
 		D737A87A1A35822B00C62FDC /* RobotControlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RobotControlViewController.h; sourceTree = "<group>"; };
 		D737A87B1A35822B00C62FDC /* RobotControlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RobotControlViewController.m; sourceTree = "<group>"; };
+		D752F24F1A3EA4B500D303F4 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
 		D7FD426F1A33D37E00B982F2 /* dashanddot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dashanddot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FD42731A33D37E00B982F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7FD42741A33D37E00B982F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -64,8 +66,8 @@
 		D7FD428B1A33D37E00B982F2 /* dashanddotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dashanddotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FD42901A33D37E00B982F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7FD42911A33D37E00B982F2 /* dashanddotTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dashanddotTests.m; sourceTree = "<group>"; };
-		D7FD429B1A33D5FC00B982F2 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
-		D7FD429C1A33D5FC00B982F2 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		D7FD429B1A33D5FC00B982F2 /* DriveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DriveViewController.h; sourceTree = "<group>"; };
+		D7FD429C1A33D5FC00B982F2 /* DriveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DriveViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D737A8651A3508DD00C62FDC /* libc++.dylib in Frameworks */,
+				D752F2511A3EA4C300D303F4 /* CoreMotion.framework in Frameworks */,
 				D737A8671A3508EC00C62FDC /* CoreBluetooth.framework in Frameworks */,
 				D737A8631A35072200C62FDC /* WWRobotAPI.framework in Frameworks */,
 				D737A86D1A350D8900C62FDC /* UIKit.framework in Frameworks */,
@@ -94,6 +97,7 @@
 		D737A8681A35094000C62FDC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D752F24F1A3EA4B500D303F4 /* CoreMotion.framework */,
 				D737A86C1A350D8800C62FDC /* UIKit.framework */,
 				D737A86A1A350D7300C62FDC /* Foundation.framework */,
 				D737A8661A3508EC00C62FDC /* CoreBluetooth.framework */,
@@ -110,8 +114,8 @@
 				D737A87B1A35822B00C62FDC /* RobotControlViewController.m */,
 				D737A8701A351EC000C62FDC /* RobotListViewController.h */,
 				D737A8711A351F8300C62FDC /* RobotListViewController.m */,
-				D7FD429B1A33D5FC00B982F2 /* ThirdViewController.h */,
-				D7FD429C1A33D5FC00B982F2 /* ThirdViewController.m */,
+				D7FD429B1A33D5FC00B982F2 /* DriveViewController.h */,
+				D7FD429C1A33D5FC00B982F2 /* DriveViewController.m */,
 				D7FD42791A33D37E00B982F2 /* SoundViewController.h */,
 				D7FD427A1A33D37E00B982F2 /* SoundViewController.m */,
 				D7FD427C1A33D37E00B982F2 /* SensorsViewController.h */,
@@ -239,6 +243,7 @@
 				TargetAttributes = {
 					D7FD426E1A33D37E00B982F2 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = VC98XLB6TD;
 					};
 					D7FD428A1A33D37E00B982F2 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -291,7 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7FD427E1A33D37E00B982F2 /* SensorsViewController.m in Sources */,
-				D7FD429D1A33D5FC00B982F2 /* ThirdViewController.m in Sources */,
+				D7FD429D1A33D5FC00B982F2 /* DriveViewController.m in Sources */,
 				D7FD42781A33D37E00B982F2 /* AppDelegate.m in Sources */,
 				D737A8721A351F8300C62FDC /* RobotListViewController.m in Sources */,
 				D7FD427B1A33D37E00B982F2 /* SoundViewController.m in Sources */,
@@ -413,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libraries",
@@ -431,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/libraries",

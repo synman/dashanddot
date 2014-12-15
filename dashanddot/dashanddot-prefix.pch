@@ -16,6 +16,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+#import <CoreMotion/CoreMotion.h>
+
 #import <WWRobotAPI/WWRobotAPI.h>
 
 #endif

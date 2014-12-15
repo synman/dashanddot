@@ -22,9 +22,14 @@
  */
 @property (nonatomic, readonly) double amplitude;
 
+@property (nonatomic, readonly) BOOL clapDetected;
+
 /**
  *  Direction angle (in radians) where the sound originates, from the point of view of the robot.  Returns values from [-PI, PI].
  */
 @property (nonatomic, readonly) double triangulationAngle;
+
+
+@property (nonatomic, readonly) double triangulationConfidence DEPRECATED_ATTRIBUTE;
 
 @end

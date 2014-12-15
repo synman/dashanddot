@@ -21,6 +21,7 @@
 /**
  *  Returns the averaged light reflectance received by the sensor.
  */
+@property (nonatomic, readonly) double distance;
 @property (nonatomic, readonly) double reflectance;
 
 @end

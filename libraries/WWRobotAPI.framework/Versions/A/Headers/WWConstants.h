@@ -12,6 +12,7 @@
 // todo: convert into typedef, as well as making everything to be #define
 // hide others in WWConstants_Internal.h
 
+#define WW_SENSOR_BODY_POSE 2002
 /** number constant definitions **/
 
 // max/min boundaries

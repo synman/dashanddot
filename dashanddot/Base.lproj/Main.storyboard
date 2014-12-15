@@ -34,6 +34,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sounds" image="first" id="acW-dT-cKf"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,89 +53,192 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKl-rW-Nrl">
-                                <rect key="frame" x="279" y="241" width="42" height="21"/>
+                                <rect key="frame" x="294" y="250" width="12" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jGp-AF-scf" userLabel="X Progress">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jGp-AF-scf" userLabel="X Progress">
                                 <rect key="frame" x="225" y="270" width="150" height="2.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="r87-rx-WG8"/>
+                                </constraints>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Y" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E76-wS-7yX">
-                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <rect key="frame" x="294" y="289" width="11.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3sb-Cc-aRe" userLabel="Y Progress">
-                                <rect key="frame" x="225" y="318" width="150" height="2.5"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3sb-Cc-aRe" userLabel="Y Progress">
+                                <rect key="frame" x="225" y="309" width="150" height="2.5"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Z" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Y7-Uz-brP">
-                                <rect key="frame" x="279" y="338" width="42" height="21"/>
+                                <rect key="frame" x="296" y="330" width="11" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2wx-6Q-nJf" userLabel="Z Progress">
-                                <rect key="frame" x="225" y="367" width="150" height="2.5"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2wx-6Q-nJf" userLabel="Z Progress">
+                                <rect key="frame" x="225" y="350" width="150" height="2.5"/>
                             </progressView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Microphone" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I4q-3P-TkN">
-                                <rect key="frame" x="252" y="72" width="96" height="21"/>
+                                <rect key="frame" x="254" y="21" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-OG-zec" userLabel="Amplitude Progress">
-                                <rect key="frame" x="225" y="101" width="150" height="2"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-OG-zec" userLabel="Amplitude Progress">
+                                <rect key="frame" x="225" y="48.5" width="150" height="2"/>
                             </progressView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-DU-sLT">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Wez-DU-sLT">
                                 <rect key="frame" x="276" y="512" width="51" height="31"/>
                                 <connections>
                                     <action selector="detectMovementSwitchChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="kJ0-1H-XXL"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Detect Movement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GxY-qR-CXj">
-                                <rect key="frame" x="221" y="483" width="159" height="21"/>
+                                <rect key="frame" x="233" y="484" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rF-kZ-uRo" userLabel="Sensors Label">
-                                <rect key="frame" x="119" y="137" width="362" height="21"/>
+                                <rect key="frame" x="50" y="71" width="500" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="19o-AO-FLY"/>
+                                    <constraint firstAttribute="height" id="7Pk-4m-y5H"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="19o-AO-FLY"/>
+                                        <exclude reference="7Pk-4m-y5H"/>
+                                    </mask>
+                                </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dash-vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xmt-aw-s7o">
+                                <rect key="frame" x="256" y="124" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="Xd6-XD-PwG"/>
+                                    <constraint firstAttribute="height" constant="80" id="bhI-Yi-cuo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dash-vertical-left" translatesAutoresizingMaskIntoConstraints="NO" id="CfE-JQ-8nM">
+                                <rect key="frame" x="256" y="124" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="HeT-wf-Cvd"/>
+                                    <constraint firstAttribute="width" constant="80" id="iwi-Bj-lZb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dash-vertical-right" translatesAutoresizingMaskIntoConstraints="NO" id="EGx-yL-eqf">
+                                <rect key="frame" x="256" y="124" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gmd-NM-Yjb"/>
+                                    <constraint firstAttribute="width" constant="80" id="que-cT-gui"/>
+                                </constraints>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="dash-vertical-rear" translatesAutoresizingMaskIntoConstraints="NO" id="hbR-r5-awb">
+                                <rect key="frame" x="256" y="124" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Qeg-eg-izm"/>
+                                    <constraint firstAttribute="width" constant="80" id="uk8-T2-VIe"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2wx-6Q-nJf" firstAttribute="leading" secondItem="3sb-Cc-aRe" secondAttribute="leading" id="0dr-ij-eJo"/>
+                            <constraint firstAttribute="bottom" secondItem="2wx-6Q-nJf" secondAttribute="bottom" constant="248.5" id="3AM-xn-5pr"/>
                             <constraint firstItem="jGp-AF-scf" firstAttribute="top" secondItem="lKl-rW-Nrl" secondAttribute="bottom" id="5BW-DG-QBB"/>
                             <constraint firstAttribute="centerX" secondItem="jGp-AF-scf" secondAttribute="centerX" id="6B1-Bh-VKX"/>
                             <constraint firstAttribute="centerX" secondItem="GxY-qR-CXj" secondAttribute="centerX" id="6gR-9p-8oX"/>
+                            <constraint firstItem="jGp-AF-scf" firstAttribute="top" secondItem="lKl-rW-Nrl" secondAttribute="bottom" id="9R4-3B-Pdu"/>
+                            <constraint firstAttribute="centerX" secondItem="hbR-r5-awb" secondAttribute="centerX" id="Dwi-YO-Dek"/>
+                            <constraint firstItem="3sb-Cc-aRe" firstAttribute="leading" secondItem="jGp-AF-scf" secondAttribute="leading" id="EVI-08-65N"/>
+                            <constraint firstItem="3sb-Cc-aRe" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" id="FoW-4q-nGS"/>
                             <constraint firstAttribute="centerX" secondItem="I4q-3P-TkN" secondAttribute="centerX" id="G1R-jQ-Ijc"/>
-                            <constraint firstItem="1rF-kZ-uRo" firstAttribute="top" secondItem="GPP-OG-zec" secondAttribute="bottom" constant="20" id="K1H-U4-MBQ"/>
+                            <constraint firstItem="GPP-OG-zec" firstAttribute="leading" secondItem="jGp-AF-scf" secondAttribute="leading" id="GZ4-2h-7KH"/>
+                            <constraint firstItem="1rF-kZ-uRo" firstAttribute="top" secondItem="GPP-OG-zec" secondAttribute="bottom" constant="60" id="K1H-U4-MBQ"/>
+                            <constraint firstAttribute="bottom" secondItem="2wx-6Q-nJf" secondAttribute="bottom" constant="248.5" id="KbS-oW-BPI"/>
                             <constraint firstItem="2wx-6Q-nJf" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" constant="40" id="MId-dE-ycT"/>
+                            <constraint firstItem="3sb-Cc-aRe" firstAttribute="leading" secondItem="jGp-AF-scf" secondAttribute="leading" id="MWl-XU-6eH"/>
+                            <constraint firstItem="E76-wS-7yX" firstAttribute="top" secondItem="jGp-AF-scf" secondAttribute="bottom" constant="18" id="Ngp-Fs-27z"/>
                             <constraint firstAttribute="centerX" secondItem="E76-wS-7yX" secondAttribute="centerX" id="Pxr-1W-F4X"/>
+                            <constraint firstItem="3sb-Cc-aRe" firstAttribute="leading" secondItem="jGp-AF-scf" secondAttribute="leading" id="Rbo-ZW-Ahc"/>
                             <constraint firstAttribute="centerX" secondItem="lKl-rW-Nrl" secondAttribute="centerX" id="RyH-EZ-0sf"/>
                             <constraint firstItem="E76-wS-7yX" firstAttribute="top" secondItem="jGp-AF-scf" secondAttribute="bottom" constant="18" id="SGA-uD-QIv"/>
+                            <constraint firstItem="EGx-yL-eqf" firstAttribute="top" secondItem="1rF-kZ-uRo" secondAttribute="bottom" constant="23" id="TNV-KX-KNE"/>
                             <constraint firstItem="I4q-3P-TkN" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="TYB-58-zm8"/>
+                            <constraint firstItem="1rF-kZ-uRo" firstAttribute="top" secondItem="GPP-OG-zec" secondAttribute="bottom" constant="21" id="Tgz-HO-Bx3"/>
+                            <constraint firstAttribute="bottom" secondItem="3sb-Cc-aRe" secondAttribute="bottom" constant="288.5" id="W7i-of-lsk"/>
                             <constraint firstAttribute="centerX" secondItem="2wx-6Q-nJf" secondAttribute="centerX" id="XRP-V7-3cF"/>
                             <constraint firstAttribute="centerX" secondItem="3sb-Cc-aRe" secondAttribute="centerX" id="Yt2-Bt-ndO"/>
                             <constraint firstAttribute="centerX" secondItem="GPP-OG-zec" secondAttribute="centerX" id="ZWV-w4-Fky"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Wez-DU-sLT" secondAttribute="bottom" constant="8" id="ba0-rn-FPS"/>
-                            <constraint firstAttribute="centerY" secondItem="E76-wS-7yX" secondAttribute="centerY" constant="0.5" id="clY-Oc-3R7"/>
+                            <constraint firstItem="1rF-kZ-uRo" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="71" id="bga-wK-rya"/>
+                            <constraint firstItem="hbR-r5-awb" firstAttribute="top" secondItem="1rF-kZ-uRo" secondAttribute="bottom" constant="23" id="bnW-dB-T8F"/>
+                            <constraint firstItem="xmt-aw-s7o" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="bqG-21-cnj"/>
+                            <constraint firstItem="CfE-JQ-8nM" firstAttribute="top" secondItem="1rF-kZ-uRo" secondAttribute="bottom" constant="23" id="cCG-aq-1aA"/>
+                            <constraint firstItem="GPP-OG-zec" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="48" id="cF8-u2-XI6"/>
+                            <constraint firstAttribute="centerY" secondItem="E76-wS-7yX" secondAttribute="centerY" id="clY-Oc-3R7"/>
                             <constraint firstItem="Wez-DU-sLT" firstAttribute="top" secondItem="GxY-qR-CXj" secondAttribute="bottom" constant="8" id="cuh-SO-kOC"/>
+                            <constraint firstAttribute="bottom" secondItem="3sb-Cc-aRe" secondAttribute="bottom" constant="288.5" id="dru-BU-Dil"/>
+                            <constraint firstItem="jGp-AF-scf" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" constant="270" id="eC6-a4-Wkn"/>
+                            <constraint firstItem="2wx-6Q-nJf" firstAttribute="top" secondItem="0Y7-Uz-brP" secondAttribute="bottom" id="goU-hd-Blk"/>
+                            <constraint firstItem="xmt-aw-s7o" firstAttribute="top" secondItem="1rF-kZ-uRo" secondAttribute="bottom" constant="23" id="iAD-dX-fGv"/>
+                            <constraint firstItem="hbR-r5-awb" firstAttribute="top" secondItem="1rF-kZ-uRo" secondAttribute="bottom" constant="23" id="imL-kM-DkV"/>
                             <constraint firstAttribute="centerX" secondItem="Wez-DU-sLT" secondAttribute="centerX" constant="-0.5" id="jyk-Cz-aXp"/>
+                            <constraint firstAttribute="centerX" secondItem="2wx-6Q-nJf" secondAttribute="centerX" id="k8t-Vn-dxA"/>
+                            <constraint firstItem="2wx-6Q-nJf" firstAttribute="trailing" secondItem="3sb-Cc-aRe" secondAttribute="trailing" id="kKa-yb-JyH"/>
+                            <constraint firstAttribute="centerX" secondItem="CfE-JQ-8nM" secondAttribute="centerX" id="kXM-Lo-2g5"/>
+                            <constraint firstAttribute="centerX" secondItem="jGp-AF-scf" secondAttribute="centerX" id="l84-Pg-iQW"/>
                             <constraint firstItem="0Y7-Uz-brP" firstAttribute="top" secondItem="3sb-Cc-aRe" secondAttribute="bottom" constant="18" id="mYV-c4-DhU"/>
+                            <constraint firstItem="2wx-6Q-nJf" firstAttribute="leading" secondItem="3sb-Cc-aRe" secondAttribute="leading" id="mrX-pp-qXh"/>
                             <constraint firstItem="3sb-Cc-aRe" firstAttribute="top" secondItem="E76-wS-7yX" secondAttribute="bottom" id="ozc-5a-Ci3"/>
                             <constraint firstItem="GPP-OG-zec" firstAttribute="top" secondItem="I4q-3P-TkN" secondAttribute="bottom" id="q7C-tD-RaQ"/>
                             <constraint firstAttribute="centerX" secondItem="0Y7-Uz-brP" secondAttribute="centerX" id="qog-EK-hxT"/>
+                            <constraint firstItem="2wx-6Q-nJf" firstAttribute="top" secondItem="0Y7-Uz-brP" secondAttribute="bottom" id="qtM-4W-z0O"/>
+                            <constraint firstAttribute="centerX" secondItem="xmt-aw-s7o" secondAttribute="centerX" id="rX3-LE-yBD"/>
+                            <constraint firstItem="2wx-6Q-nJf" firstAttribute="top" secondItem="0Y7-Uz-brP" secondAttribute="bottom" id="shb-HZ-X7J"/>
+                            <constraint firstAttribute="centerX" secondItem="EGx-yL-eqf" secondAttribute="centerX" id="skh-2e-CmX"/>
                             <constraint firstAttribute="centerX" secondItem="1rF-kZ-uRo" secondAttribute="centerX" id="vkE-mq-YwI"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="K1H-U4-MBQ"/>
+                                <exclude reference="bga-wK-rya"/>
+                                <exclude reference="cF8-u2-XI6"/>
+                                <exclude reference="imL-kM-DkV"/>
+                                <exclude reference="bqG-21-cnj"/>
+                                <exclude reference="5BW-DG-QBB"/>
+                                <exclude reference="6B1-Bh-VKX"/>
+                                <exclude reference="eC6-a4-Wkn"/>
+                                <exclude reference="MWl-XU-6eH"/>
+                                <exclude reference="Rbo-ZW-Ahc"/>
+                                <exclude reference="W7i-of-lsk"/>
+                                <exclude reference="dru-BU-Dil"/>
+                                <exclude reference="ozc-5a-Ci3"/>
+                                <exclude reference="SGA-uD-QIv"/>
+                                <exclude reference="clY-Oc-3R7"/>
+                                <exclude reference="KbS-oW-BPI"/>
+                                <exclude reference="MId-dE-ycT"/>
+                                <exclude reference="XRP-V7-3cF"/>
+                                <exclude reference="k8t-Vn-dxA"/>
+                                <exclude reference="mrX-pp-qXh"/>
+                                <exclude reference="qtM-4W-z0O"/>
+                                <exclude reference="shb-HZ-X7J"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Sensors" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="amplitudeProgress" destination="GPP-OG-zec" id="Jxw-5V-t05"/>
+                        <outlet property="dashSensorLeft" destination="CfE-JQ-8nM" id="By1-DU-Dqs"/>
+                        <outlet property="dashSensorRear" destination="hbR-r5-awb" id="IGc-iG-XA8"/>
+                        <outlet property="dashSensorRight" destination="EGx-yL-eqf" id="oeF-Xm-ij8"/>
                         <outlet property="detectMovementSwitch" destination="Wez-DU-sLT" id="dLd-As-yQN"/>
                         <outlet property="sensorsLabel" destination="1rF-kZ-uRo" id="C65-b5-2iY"/>
                         <outlet property="xProgress" destination="jGp-AF-scf" id="teU-S8-4Zn"/>
@@ -146,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="544" y="80"/>
         </scene>
-        <!--Third-->
+        <!--Drive-->
         <scene sceneID="pSq-7b-sby">
             <objects>
-                <viewController id="Tr8-Q4-ROr" userLabel="Third" customClass="ThirdViewController" sceneMemberID="viewController">
+                <viewController id="Tr8-Q4-ROr" userLabel="Drive" customClass="DriveViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aQ3-wj-9pH"/>
                         <viewControllerLayoutGuide type="bottom" id="3Ks-6l-aMG"/>
@@ -180,7 +284,7 @@
                             <constraint firstItem="KUP-HD-Gg2" firstAttribute="top" secondItem="AXS-wt-dGE" secondAttribute="bottom" constant="8" symbolic="YES" id="nh4-An-0Bq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" image="third" id="V2V-Jp-PrX" userLabel="Third"/>
+                    <tabBarItem key="tabBarItem" title="Third" image="third" id="V2V-Jp-PrX" userLabel="Drive"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pqf-i8-pNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -223,6 +327,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="detailsButton" destination="yYx-xW-wB6" id="L5G-Wg-rDI"/>
                     </connections>
@@ -235,6 +340,7 @@
         <scene sceneID="8pA-yP-0Wd">
             <objects>
                 <navigationController id="J8k-Vc-oCq" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="g4Z-TV-zMx">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -251,6 +357,7 @@
         <scene sceneID="4bs-j0-b4k">
             <objects>
                 <splitViewController id="BTc-JX-Hcf" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <segue destination="J8k-Vc-oCq" kind="relationship" relationship="masterViewController" id="Tsh-O6-Ii2"/>
                         <segue destination="SYo-mV-u5I" kind="relationship" relationship="detailViewController" id="QpF-VV-Yui"/>
@@ -264,6 +371,7 @@
         <scene sceneID="yhD-nT-K9D">
             <objects>
                 <navigationController id="SYo-mV-u5I" sceneMemberID="viewController">
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kgL-H0-xs5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -299,6 +407,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="dash-vertical" width="307" height="272"/>
+        <image name="dash-vertical-left" width="307" height="272"/>
+        <image name="dash-vertical-rear" width="307" height="272"/>
+        <image name="dash-vertical-right" width="307" height="272"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="third" width="30" height="30"/>

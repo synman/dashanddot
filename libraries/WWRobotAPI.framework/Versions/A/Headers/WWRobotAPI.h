@@ -16,6 +16,7 @@
 #import <WWRobotAPI/WWCommandLightRGB.h>
 #import <WWRobotAPI/WWCommandHeadPosition.h>
 #import <WWRobotAPI/WWCommandBodyLinearAngular.h>
+#import <WWRobotAPI/WWCommandBodyWheels.h>
 #import <WWRobotAPI/WWCommandSpeaker.h>
 
 // basic sensors
@@ -26,6 +27,8 @@
 #import <WWRobotAPI/WWSensorEncoder.h>
 #import <WWRobotAPI/WWSensorMicrophone.h>
 #import <WWRobotAPI/WWSensorHeadPosition.h>
+
+#import <WWRobotAPI/WWSensorBodyPose.h>
 
 // complex command sets
 #import <WWRobotAPI/WWComponentSet.h>
